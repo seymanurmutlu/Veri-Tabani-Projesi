@@ -1,12 +1,11 @@
 
 import java.util.ArrayList;
 
-
 public class hammaddeSatinAlmaEkrani extends javax.swing.JDialog {
 
-     UreticiIslemleri islemler=new UreticiIslemleri();
-    
-     public hammaddeSatinAlmaEkrani(java.awt.Frame parent, boolean modal) {
+    UreticiIslemleri islemler = new UreticiIslemleri();
+
+    public hammaddeSatinAlmaEkrani(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }
@@ -111,52 +110,69 @@ public class hammaddeSatinAlmaEkrani extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
- 
-    
+
     private void ekleButonuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ekleButonuActionPerformed
-        
-        String hammaddeAdi=hammaddeAdiAlani.getText();
-        int istenilenMiktar=Integer.valueOf(istenilenMiktarAlani.getText());
+
+        String hammaddeAdi = hammaddeAdiAlani.getText();
+        int istenilenMiktar = Integer.valueOf(istenilenMiktarAlani.getText());
         //..  aranan hammaddeyi al, sorguyla tedarikcilerden aradiklarini getir
         /////arraylist
         //.. ulasim i al
         //.. toplammaliyet =  hammadde x miktar ++ ulasim
         //.. arrayliste sirayla ekle
-        ///////////////////////////////////////////////////
+        /////////////////////////////////////////////////// 
         //.. arraylist sirala en kucugu satirdaki tum bilgiler ile al 
         //.. aldigin satir bilgilerini ureticialis tablosuna ekle
         //ArrayList<hammaddeSatinAl> hammaddeler = new ArrayList<hammaddeSatinAl>();
+        /*    ArrayList<hammaddeSatinAl> yurtDisindakiHammaddeler = new ArrayList<hammaddeSatinAl>();
+         ArrayList<hammaddeSatinAl> yurtIcýndekiHammaddeler = new ArrayList<hammaddeSatinAl>();
+
+         yurtIcýndekiHammaddeler = islemler.yurtIcýndekiHammaddeSatinAlinabilecekleriGoster(hammaddeAdi, istenilenMiktar); //..cikti geldi
+         yurtDisindakiHammaddeler = islemler.yurtDisindakiHammaddeSatinAlinabilecekleriGoster(hammaddeAdi, istenilenMiktar);
+         System.out.println(islemler.yurtIcýndekiCikti.size());
+         for (int i = 0; i < yurtIcýndekiHammaddeler.size(); i++) {
+         System.out.println("FID :" + yurtIcýndekiHammaddeler.get(i).getFID());
+         System.out.println("Hammadde Miktari : " + yurtIcýndekiHammaddeler.get(i).getHammaddeMiktari());
+         System.out.println("Satis Fiyati :" + yurtIcýndekiHammaddeler.get(i).getSatisFiyati());
+         System.out.println("Maliyet :" + yurtIcýndekiHammaddeler.get(i).getMaliyet());
+         System.out.println("-----------------------");
+         }
+         //...
+         System.out.println("****************************");
+         System.out.println(islemler.yurtDisindakiCikti.size());
+         for (int i = 0; i < islemler.yurtDisindakiCikti.size(); i++) {
+         System.out.println("Yurt Disindaki FID :" + islemler.yurtDisindakiCikti.get(i).getFID());
+         System.out.println("Yurt Disindaki Hammadde Miktari : " + islemler.yurtDisindakiCikti.get(i).getHammaddeMiktari());
+         System.out.println("Yurt Disindaki Satis Fiyati :" + islemler.yurtDisindakiCikti.get(i).getSatisFiyati());
+         System.out.println("Yurt Disindaki Maliyet :" + islemler.yurtDisindakiCikti.get(i).getMaliyet());
+         System.out.println("-----------------------");
+         }**/
         ArrayList<hammaddeSatinAl> hammaddeler = new ArrayList<hammaddeSatinAl>();
-        //hammaddeler = islemler.hammaddeSatinAlinabilecekleriGoster(hammaddeAdi, istenilenMiktar); //..cikti geldi
-        hammaddeler=islemler.yurtDisindakiHammaddeSatinAlinabilecekleriGoster(hammaddeAdi, istenilenMiktar);
+        hammaddeler = hammaddeleriBirlestir(hammaddeAdi, istenilenMiktar);
         System.out.println(hammaddeler.size());
         for (int i = 0; i < hammaddeler.size(); i++) {
-            System.out.println("FID :"+hammaddeler.get(i).getFID());
-            System.out.println("Hammadde Miktari : "+hammaddeler.get(i).getHammaddeMiktari());
-            System.out.println("Satis Fiyati :"+hammaddeler.get(i).getSatisFiyati());
-            System.out.println("Maliyet :"+hammaddeler.get(i).getMaliyet());
+            System.out.println("FID :" + hammaddeler.get(i).getFID());
+            System.out.println("Hammadde Miktari : " + hammaddeler.get(i).getHammaddeMiktari());
+            System.out.println("Satis Fiyati :" + hammaddeler.get(i).getSatisFiyati());
+            System.out.println("Maliyet :" + hammaddeler.get(i).getMaliyet());
             System.out.println("-----------------------");
         }
-        //...
-        System.out.println("****************************");
-        System.out.println(islemler.yurtDisindakiCikti.size());
-        for (int i = 0; i < islemler.yurtDisindakiCikti.size(); i++) {
-            System.out.println("Yurt Disindaki FID :"+islemler.yurtDisindakiCikti.get(i).getFID());
-            System.out.println("Yurt Disindaki Hammadde Miktari : "+hammaddeler.get(i).getHammaddeMiktari());
-            System.out.println("Yurt Disindaki Satis Fiyati :"+islemler.yurtDisindakiCikti.get(i).getSatisFiyati());
-            System.out.println("Yurt Disindaki Maliyet :"+islemler.yurtDisindakiCikti.get(i).getMaliyet());
-            System.out.println("-----------------------");
-            System.out.println("ILKINI DENE :"+islemler.yurtDisindakiCikti.get(0).getFID());
-        }
-        
-       // islemler.satinAlinanHammaddeEkle(hammaddeAdi,istenilenMiktar); //hammaddesatinalma tablosuna veri eklendi
-        
         mesajAlani.setText("Hammadde Alimi Basari ile Gerceklemistir.");
-        mesajAlani2.setText("Uretici Alis Tablosunu Kontrol Ediniz ...");    
+        mesajAlani2.setText("Uretici Alis Tablosunu Kontrol Ediniz ...");
+
+
     }//GEN-LAST:event_ekleButonuActionPerformed
 
+
+    public ArrayList<hammaddeSatinAl> hammaddeleriBirlestir(String hammaddeAdi, int istenilenMiktar) {
+        ArrayList<hammaddeSatinAl> list = new ArrayList<hammaddeSatinAl>();
+        list = islemler.yurtIcindekiHammaddeSatinAlinabilecekleriGoster(hammaddeAdi, istenilenMiktar);
+        list.addAll(islemler.yurtDisindakiHammaddeSatinAlinabilecekleriGoster(hammaddeAdi, istenilenMiktar));
+        return list;
+    }
+    
     private void geriGelButonuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_geriGelButonuActionPerformed
-        
+
         GirisEkrani girisEkran = new GirisEkrani();
         yonlendirmeEkrani yonlendirmeEkran = new yonlendirmeEkrani(girisEkran, true);
 
@@ -166,7 +182,7 @@ public class hammaddeSatinAlmaEkrani extends javax.swing.JDialog {
     }//GEN-LAST:event_geriGelButonuActionPerformed
 
     public static void main(String args[]) {
-        
+
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {

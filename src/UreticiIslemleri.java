@@ -18,7 +18,7 @@ public class UreticiIslemleri {
     public int karOrani;
     public int kargoMaliyeti;
     public ArrayList<hammaddeSatinAl> yurtDisindakiCikti = new ArrayList<hammaddeSatinAl>();
-    public ArrayList<hammaddeSatinAl> cikti = new ArrayList<hammaddeSatinAl>();
+    public ArrayList<hammaddeSatinAl> yurtIcindekiCikti = new ArrayList<hammaddeSatinAl>();
 
     public int getKarOrani() {
         return karOrani;
@@ -254,7 +254,7 @@ public class UreticiIslemleri {
 
     }
 
-    public ArrayList<hammaddeSatinAl> hammaddeSatinAlinabilecekleriGoster(String hammaddeAdi, int istenilenMiktar) {
+    public ArrayList<hammaddeSatinAl> yurtIcindekiHammaddeSatinAlinabilecekleriGoster(String hammaddeAdi, int istenilenMiktar) {
         String sorgu = "SELECT T1.FID, T1.hammaddeMiktari ,T1.satisFiyati, ((T1.satisFiyati*?)+F1.mesafe*0.5) AS toplamMaliyet FROM tedarikedilenurunbilgileri T1, tedarikcibilgiler B1, sehirlerarasimesafe F1 WHERE T1.FID=B1.FID AND B1.sehir=F1.sehirler AND T1.uretilenHammadde = ? AND B1.ulke = 'Turkiye' ORDER BY ((T1.satisFiyati*?)+F1.mesafe*0.5)";
          try {
             preparedStatement = con.prepareStatement(sorgu);
@@ -269,10 +269,10 @@ public class UreticiIslemleri {
                 int satisFiyati = rs.getInt("T1.satisFiyati");
                 float maliyet = rs.getFloat("toplamMaliyet");
                 
-                cikti.add(new hammaddeSatinAl(FID, hammaddeMiktari ,satisFiyati, maliyet));
+                yurtIcindekiCikti.add(new hammaddeSatinAl(FID, hammaddeMiktari ,satisFiyati, maliyet));
                 
             }
-            return cikti;
+            return yurtIcindekiCikti;
 
         } catch (SQLException ex) {
             Logger.getLogger(UreticiIslemleri.class.getName()).log(Level.SEVERE, null, ex);
@@ -308,23 +308,6 @@ public class UreticiIslemleri {
             System.out.println("Yurt Disindaki Hammadde sorgusunda hata var.");
             return null;
         }
-    }
-
-    /*SILINEBILIR*/
-    public void satinAlinanHammaddeEkle(String hammaddeAdi, int istenilenMiktar) {
-        /*bu fonksiyon hammaddesatinalma tablosuna talebi ekler.*/
-        String sorgu = "INSERT INTO hammaddesatinalma (hammaddeAdi,istenilenMiktar) VALUES (?,?)";
-
-        try {
-            preparedStatement = con.prepareStatement(sorgu);
-            preparedStatement.setString(1, hammaddeAdi);
-            preparedStatement.setInt(2, istenilenMiktar);
-            preparedStatement.executeUpdate();
-
-        } catch (SQLException ex) {
-            System.out.println("Satin Alinan Hammadde Ekle Sorgusunda Hata Bulunmaktadir");
-        }
-
     }
 
 }
