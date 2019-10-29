@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="bounds" type="java.awt.Rectangle" editor="org.netbeans.beaninfo.editors.RectangleEditor">
+      <Rectangle value="[425, 120, 0, 0]"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                      <Component id="jSeparator1" alignment="1" min="-2" pref="315" max="-2" attributes="0"/>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                          <Component id="tarihAlani" min="-2" pref="121" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="hammaddeSatinAlmaButonu" alignment="0" max="32767" attributes="0"/>
+                      <Component id="sehirlerArasiMesafeButonu" alignment="0" max="32767" attributes="0"/>
+                      <Component id="kimyasalMaddeBilgileriButonu" alignment="0" max="32767" attributes="0"/>
+                      <Component id="ureticiSatisTablosu" alignment="0" max="32767" attributes="0"/>
+                      <Component id="ureticiAlisButonu" alignment="0" max="32767" attributes="0"/>
+                      <Component id="ureticiUretimButonu" alignment="0" max="32767" attributes="0"/>
+                      <Component id="musteriBilgileriButonu" alignment="0" max="32767" attributes="0"/>
+                      <Component id="musteriTalepleriButonu" alignment="0" max="32767" attributes="0"/>
+                      <Component id="tedarikciBilgileriButonu" alignment="0" max="32767" attributes="0"/>
+                      <Component id="tedarikEdilenUrunBilgileriButonu" alignment="0" max="32767" attributes="0"/>
+                      <Component id="ureticiBilgileriButonu" alignment="0" pref="295" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="41" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+              <Component id="jLabel4" min="-2" pref="17" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="tarihAlani" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jSeparator1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="sehirlerArasiMesafeButonu" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="kimyasalMaddeBilgileriButonu" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="ureticiBilgileriButonu" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="ureticiSatisTablosu" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="ureticiAlisButonu" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="ureticiUretimButonu" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="musteriBilgileriButonu" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="musteriTalepleriButonu" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="tedarikciBilgileriButonu" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="tedarikEdilenUrunBilgileriButonu" min="-2" pref="32" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="hammaddeSatinAlmaButonu" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="9" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="tedarikciBilgileriButonu">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Tedarikci Bilgileri "/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tedarikciBilgileriButonuActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="tedarikEdilenUrunBilgileriButonu">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Tedarik Edilen Urun Bilgileri"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tedarikEdilenUrunBilgileriButonuActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="musteriBilgileriButonu">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Musteri Bilgileri"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="musteriBilgileriButonuActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="musteriTalepleriButonu">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Musteri Talepleri"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="musteriTalepleriButonuActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Goruntulemek ve degisiklik yapmak istediginiz tabloyu seciniz."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="ureticiBilgileriButonu">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Uretici Bilgileri"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ureticiBilgileriButonuActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="ureticiAlisButonu">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Ureticinin Alim Tablosu"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ureticiAlisButonuActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="ureticiUretimButonu">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Uretici Uretim Tablosu"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ureticiUretimButonuActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="ureticiSatisTablosu">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Uretici Satis Tablosu"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ureticiSatisTablosuActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="kimyasalMaddeBilgileriButonu">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Kimyasal Madde Bilgileri"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="kimyasalMaddeBilgileriButonuActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="sehirlerArasiMesafeButonu">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Sehirler Arasi Mesafeler"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sehirlerArasiMesafeButonuActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Tarih : "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel4">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="12" style="2"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Islemleri yapmadan once tarih belirtiniz."/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="tarihAlani">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="cc" green="cc" red="cc" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="GGAAYYYY"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tarihAlaniActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Kaydet"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JSeparator" name="jSeparator1">
+    </Component>
+    <Component class="javax.swing.JButton" name="hammaddeSatinAlmaButonu">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Hammadde Satin Alma Ekrani"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="hammaddeSatinAlmaButonuActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>

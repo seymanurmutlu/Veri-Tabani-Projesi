@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 21 May 2019, 22:28:54
+-- Üretim Zamanı: 22 May 2019, 23:07:56
 -- Sunucu sürümü: 10.1.28-MariaDB
 -- PHP Sürümü: 7.0.24
 
@@ -58,7 +58,7 @@ CREATE TABLE `hammaddesatinalma` (
 --
 
 INSERT INTO `hammaddesatinalma` (`hammaddeAdi`, `istenilenMiktar`) VALUES
-('H', 50);
+('O', 40);
 
 -- --------------------------------------------------------
 
@@ -289,7 +289,7 @@ INSERT INTO `tedarikedilenurunbilgileri` (`FID`, `uretilenHammadde`, `hammaddeMi
 (10, 'C', 5, '06062018', 2, 2),
 (10, 'S', 10, '07082017', 7, 4),
 (10, 'O', 5, '08042016', 5, 3),
-(10, 'N', 10, '15012019', 1, 1);
+(10, 'N', 10, '15012019', 1, 9);
 
 -- --------------------------------------------------------
 
@@ -377,9 +377,17 @@ CREATE TABLE `ureticiuretilen` (
 --
 
 INSERT INTO `ureticiuretilen` (`urunID`, `kimyasalAdi`, `uretimTarihi`, `rafOmru`, `stok`) VALUES
-(1, 'Amonyak', '15062019', 5, 100),
+(1, 'Amonyak', '01012019', 9, 50),
+(1, 'Amonyak', '13122019', 14, 20),
+(1, 'Amonyak', '14072019', 6, 10),
+(1, 'Amonyak', '19092019', 8, 40),
 (2, 'Karbondioksit', '11082019', 6, 200),
-(3, 'Kukurtdioksit', '24032019', 4, 150);
+(2, 'Karbondioksit', '17102019', 12, 30),
+(3, 'Kukurtdioksit', '14082019', 5, 50),
+(4, 'Glikoz', '04042019', 17, 10),
+(5, 'Hidrojen Klorur', '19112027', 3, 50),
+(6, 'Asetilen', '11022016', 5, 10),
+(6, 'Asetilen', '13062019', 5, 50);
 
 --
 -- Dökümü yapılmış tablolar için indeksler
